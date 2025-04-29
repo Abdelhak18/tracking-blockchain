@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi Logistique Blockchain</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.3/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Suivi Logistique sur Blockchain</h1>
+
+  <label>ID Colis : <input type="text" id="colisId" /></label>
+  <br/>
+  <label>Nouvel état : <input type="text" id="etat" /></label>
+  <br/>
+  <button onclick="creerColis()">Créer Colis</button>
+  <button onclick="majEtat()">Mettre à jour État</button>
+  <button onclick="getHistorique()">Voir Historique</button>
+
+  <ul id="historiqueList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
